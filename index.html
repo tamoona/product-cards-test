@@ -1,87 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-
-<body>
-  <main class="container">
-    <h1 class="visually-hidden">Галерея карточек с продуктами</h1>
-    <ul class="card-gallery">
-      <li class="card-gallery__item card card--selected">
-        <svg class="card__icon"></svg>
-        <p class="card__type">
-          Английский язык
-        </p>
-        <h2 class="card__title">
-          Преподавание английского языка: реализация ФГСО-2020 и новые тенденции в образовании
-        </h2>
-        <div class="card__details">
-          <div>
-            <svg class="card__icon"></svg>
-            <span>Удостоверение</span>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Продуктовые карточки</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Source+Sans+Pro&display=swap" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
+  <body class="inner-page">
+    <main class="container">
+      <h1 class="visually-hidden">Галерея карточек с продуктами</h1>
+      <ul class="card-gallery">
+        <li class="card-gallery__item card">
+          <svg class="card__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12C24 5.4 18.6 0 12 0ZM10.8 17.28L6.36 12.84L8.04 11.16L10.8 13.92L17.16 7.56L18.84 9.24L10.8 17.28Z" fill="#7FC92E" />
+          </svg>
+          <div class="card__content">
+            <p class="card__type">
+              Английский язык
+            </p>
+            <h2 class="card__title">
+              Преподавание английского языка: реализация ФГСО-2020 и&nbsp;новые тенденции в&nbsp;образовании
+            </h2>
+            <ul class="card__details details">
+              <li class="details__item">
+                <svg class="details__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 0H10H5H0V16H13H16V0H13ZM7 2H8V3L7.5 2.8L7 3V2ZM11 14H2V2H5V6L7.5 5L10 6V2H11V14ZM14 14H13V2H14V14Z" fill="#B8B8B8" />
+                </svg>
+                <p class="details__text">Удостоверение</p>
+              </li>
+              <li class="details__item">
+                <svg class="details__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 0C3.6 0 0 3.6 0 8C0 12.4 3.6 16 8 16C12.4 16 16 12.4 16 8C16 3.6 12.4 0 8 0ZM8 14C4.7 14 2 11.3 2 8C2 4.7 4.7 2 8 2C11.3 2 14 4.7 14 8C14 11.3 11.3 14 8 14Z" fill="#B8B8B8" />
+                  <path d="M7.39995 7.80005H5.19995V9.80005H9.39995V4.80005H7.39995V7.80005Z" fill="#B8B8B8" />
+                </svg>
+                <p class="details__text">72 часа</p>
+              </li>
+            </ul>
           </div>
-          <div>
-            <svg class="card__icon"></svg>
-            <span>72 часа</span>
+          <div class="card__actions">
+            <a href="#" class="card__button">Добавить</a>
           </div>
+        </li>
+        <li class="card-gallery__item card">
+          <svg class="card__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12C24 5.4 18.6 0 12 0ZM10.8 17.28L6.36 12.84L8.04 11.16L10.8 13.92L17.16 7.56L18.84 9.24L10.8 17.28Z" fill="#7FC92E" />
+          </svg>
+          <div class="card__content">
+            <p class="card__type">
+              Обществознание
+            </p>
+            <h2 class="card__title">
+              Преподавание обществознания с&nbsp;учётом перспективной модели ФГСО-2020
+            </h2>
+            <ul class="card__details details">
+              <li class="details__item">
+                <svg class="details__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 0H10H5H0V16H13H16V0H13ZM7 2H8V3L7.5 2.8L7 3V2ZM11 14H2V2H5V6L7.5 5L10 6V2H11V14ZM14 14H13V2H14V14Z" fill="#B8B8B8" />
+                </svg>
+                <p class="details__text">Удостоверение</p>
+              </li>
+              <li class="details__item">
+                <svg class="details__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 0C3.6 0 0 3.6 0 8C0 12.4 3.6 16 8 16C12.4 16 16 12.4 16 8C16 3.6 12.4 0 8 0ZM8 14C4.7 14 2 11.3 2 8C2 4.7 4.7 2 8 2C11.3 2 14 4.7 14 8C14 11.3 11.3 14 8 14Z" fill="#B8B8B8" />
+                  <path d="M7.39995 7.80005H5.19995V9.80005H9.39995V4.80005H7.39995V7.80005Z" fill="#B8B8B8" />
+                </svg>
+                <p class="details__text">72 часа</p>
+              </li>
+            </ul>
+          </div>
+          <div class="card__actions">
+            <a href="#" class="card__button">Добавить</a>
+          </div>
+        </li>
+        <li class="card-gallery__item card">
+          <svg class="card__icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 0C5.4 0 0 5.4 0 12C0 18.6 5.4 24 12 24C18.6 24 24 18.6 24 12C24 5.4 18.6 0 12 0ZM10.8 17.28L6.36 12.84L8.04 11.16L10.8 13.92L17.16 7.56L18.84 9.24L10.8 17.28Z" fill="#7FC92E" />
+          </svg>
+          <div class="card__content">
+            <p class="card__type">
+              Химия
+            </p>
+            <h2 class="card__title">
+              Преподавание химии с&nbsp;учётом перспективной модели ФГСО-2020
+            </h2>
+            <ul class="card__details details">
+              <li class="details__item">
+                <svg class="details__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 0H10H5H0V16H13H16V0H13ZM7 2H8V3L7.5 2.8L7 3V2ZM11 14H2V2H5V6L7.5 5L10 6V2H11V14ZM14 14H13V2H14V14Z" fill="#B8B8B8" />
+                </svg>
+                <p class="details__text">Удостоверение</p>
+              </li>
+              <li class="details__item">
+                <svg class="details__icon" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M8 0C3.6 0 0 3.6 0 8C0 12.4 3.6 16 8 16C12.4 16 16 12.4 16 8C16 3.6 12.4 0 8 0ZM8 14C4.7 14 2 11.3 2 8C2 4.7 4.7 2 8 2C11.3 2 14 4.7 14 8C14 11.3 11.3 14 8 14Z" fill="#B8B8B8" />
+                  <path d="M7.39995 7.80005H5.19995V9.80005H9.39995V4.80005H7.39995V7.80005Z" fill="#B8B8B8" />
+                </svg>
+                <p class="details__text">72 часа</p>
+              </li>
+            </ul>
+          </div>
+          <div class="card__actions">
+            <a href="#" class="card__button">Добавить</a>
+          </div>
+        </li>
+      </ul>
+      <aside class="cart">
+        <div class="cart__wrapper">
+          <img class="cart__icon" src="img/cart.svg" alt="Изображение корзины" />
+          <span class="cart__counter">0</span>
         </div>
-        <button class="card__button">Добавить</button>
-      </li>
-      <li class="card-gallery__item card card--selected">
-        <svg class="card__icon"></svg>
-        <p class="card__type">
-          Обществознание
-        </p>
-        <h2 class="card__title">
-          Преподавание обществознания с учётом перспективной модели ФГСО-2020
-        </h2>
-        <div class="card__details">
-          <div>
-            <svg class="card__icon"></svg>
-            <span>Удостоверение</span>
-          </div>
-          <div>
-            <svg class="card__icon"></svg>
-            <span>72 часа</span>
-          </div>
-        </div>
-        <button class="card__button">Добавить</button>
-      </li>
-      <li class="card-gallery__item card">
-        <svg class="card__icon-active"></svg>
-        <p class="card__type">
-          Химия
-        </p>
-        <h2 class="card__title">
-          Преподавание химии с учётом перспективной модели ФГСО-2020
-        </h2>
-        <div class="card__details">
-          <div>
-            <svg class="card__icon"></svg>
-            <span>Удостоверение</span>
-          </div>
-          <div>
-            <svg class="card__icon"></svg>
-            <span>72 часа</span>
-          </div>
-        </div>
-        <button class="card__button">Добавить</button>
-      </li>
-    </ul>
-  </main>
-  <aside class="cart">
-    <div class="cart__icon">
-      <span class="cart__counter">0</span>
-      <svg class="cart__icon"></svg>
-    </div>
-    <a href="#" class="cart__link">
-      Оставить заявку
-    </a>
-  </aside>
-</body>
-
+        <a href="#" class="cart__link">
+          Оставить заявку
+        </a>
+      </aside>
+    </main>
+    <script src="js/main.js"></script>
+  </body>
 </html>
