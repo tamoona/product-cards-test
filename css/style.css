@@ -53,7 +53,7 @@ body {
   background-color: #ffffff;
   position: relative;
   width: 100%;
-  min-height: 306px;
+  min-height: 340px;
   display: flex;
   flex-direction: column;
 }
@@ -137,6 +137,7 @@ body {
 .details__text {
   margin: 0;
   padding-left: 6px;
+  flex: 1;
 }
 
 .cart {
@@ -167,6 +168,7 @@ body {
 
 .cart__icon {
   width: 50px;
+  height: 41px;
 }
 
 .cart__counter {
